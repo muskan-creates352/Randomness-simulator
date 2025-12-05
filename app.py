@@ -118,5 +118,6 @@ def static_files(filename):
     return send_from_directory(STATIC_DIR, filename)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=False)
+
 
