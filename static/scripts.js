@@ -1,3 +1,5 @@
+
+
 // static/scripts.js
 document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
@@ -55,4 +57,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+<<<<<<< HEAD
 });
+=======
+});
+
+
+const resetBtn = document.getElementsByClassName("btn ghost" );
+
+resetBtn.addEventListener("click", () => {
+  document.querySelector("form").reset();
+
+  // Also reset parameter visibility
+  showParamsFor(dist1, "params1");
+  showParamsFor(dist2, "params2");
+
+  // Keep dark mode (do NOT reset theme)
+});
+
+
+
+>>>>>>> 69d594a1d198427a526cc4298b12838509b8f945
